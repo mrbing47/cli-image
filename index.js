@@ -25,7 +25,7 @@ function convertToImage(pixels, shape) {
 			const hexColor =
 				"#" + toHex(red) + toHex(green) + toHex(blue);
 
-			image += chalk.bgHex(hexColor)(" ");
+			image += chalk.bgHex(hexColor)(" ").repeat(2);
 		}
 		image += "\n";
 	}
@@ -45,6 +45,10 @@ function displayImage(path) {
 
 if (process.argv[2] == "--sample") {
 	displayImage("sample.jpg");
+}
+
+if (process.argv[2] !== undefined) {
+	displayImage(process.argv[2]);
 }
 
 module.exports = displayImage;
