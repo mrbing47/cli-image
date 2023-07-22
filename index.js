@@ -25,7 +25,7 @@ function convertToImage(pixels, shape) {
 			const hexColor =
 				"#" + toHex(red) + toHex(green) + toHex(blue);
 
-			image += chalk.bgHex(hexColor)(" ").repeat(2);
+			image += chalk.bgHex(hexColor)(" ").repeat(1);
 		}
 		image += "\n";
 	}
