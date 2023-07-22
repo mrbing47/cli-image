@@ -32,14 +32,19 @@ function convertToImage(pixels, shape) {
 	return image;
 }
 
-module.exports = (path) => {
+function displayImage(path) {
 	getPixels(path, (err, pixels) => {
 		if (err) {
 			console.log("Error in displaying the image.");
 			return;
 		}
-		// console.log(pixels.shape, [...pixels.data].slice(0, 20));
 		const image = convertToImage([...pixels.data], pixels.shape);
 		console.log(image);
 	});
-};
+}
+
+if (process.argv[2] == "--sample") {
+	displayImage("sample.jpg");
+}
+
+module.exports = displayImage;
