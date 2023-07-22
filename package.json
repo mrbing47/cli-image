@@ -1,11 +1,22 @@
 {
-  "name": "terminal-pixel",
-  "version": "1.0.0",
+  "name": "cli-image",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "keywords": [
+    "cli-image",
+    "cli",
+    "terminal",
+    "image",
+    "picture",
+    "rgb",
+    "hex",
+    "pixel",
+    "pixels",
+    "chalk",
+    "get-pixels",
+    "get-pixel"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
